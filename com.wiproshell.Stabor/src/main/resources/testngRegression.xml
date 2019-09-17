@@ -1,0 +1,15 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="FREE CRM  Application Test Automation Test Suite" >
+
+<listener>
+<listener class-name= com.crm.qa.ExtentReportListener.ExtentReportNG.java>//used  for extent report
+<listener class-name= com.crm.qa.Analyzer.MyTransformer.java>// used to re execute faield test cases
+</listener>
+
+  <test name="Free CRM App test Cases " >
+    <classes>
+        <class name="com.crm.qa.testcases.WelComePageTest" />    
+    </classes>
+  </test>
